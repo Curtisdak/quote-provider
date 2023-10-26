@@ -1,0 +1,114 @@
+*{
+   
+   
+   
+}
+body{
+    background: rgb(14, 130, 130);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+   
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: rgb(38, 175, 175);
+}
+.container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    animation: changecolor 15s infinite alternate;
+     
+}
+@keyframes changecolor {
+    0%{ color : rgb(32, 32, 188)}
+    20%{ color : rgb(144, 10, 206)}
+    40%{ color : rgb(222, 226, 22)}
+    60%{ color : rgb(246, 3, 24)}
+    80%{ color : rgb(81, 255, 0)}
+    100%{ color : rgb(86, 86, 127)}
+}
+.quotes{
+    border-radius: 30px;
+    box-shadow: 0px 30px 50px 5px rgb(62, 62, 62);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin:20px auto;
+    color: gray;
+    background-color: beige;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.quotes p{
+    font-size: 1.5em;
+    padding:0 10px; 
+}
+.quotes h3{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+   
+div button{
+    margin : 30px auto;
+   
+}
+
+@media(max-width:480px){
+    .container{
+   
+
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: rgb(14, 130, 130);
+        flex-wrap: wrap;
+    }
+
+    .quotes{
+        border: 2px solid black;
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 300px;
+        margin: auto;
+        color: gray;
+        background-color: beige;
+        flex-wrap: wrap;
+       
+    }
+
+    .quotes p{
+        font-size: 1em;
+        padding:0 5px; 
+        word-wrap: break-word;
+    }
+    .quotes h3{
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    
+}
